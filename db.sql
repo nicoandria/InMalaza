@@ -1,6 +1,3 @@
-Create database InMalaza;
-use InMalaza;
-
 Create table Categorie(
     id smallint unsigned not null auto_increment primary key,
     nom varchar(20),
