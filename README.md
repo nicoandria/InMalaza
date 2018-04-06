@@ -27,6 +27,24 @@
 	'stricton' => FALSE,
 	'failover' => array(),
 	'save_queries' => TRUE);
-  ### Etape 6 : Lancer votre application (Aucune article n'est inséré dans la base de donné il faudra donc que vous en insérer via le BackOffice)
+### Etape 6 : Configuration de .htaccess : après AuthUserFile changer l'url au chemin absolu de votre repertoire sans oublier le .htpsswd à la fin
+   Exemple:
+   
+        RewriteEngine on
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ index.php/$1 [L,QSA]
+	<FilesMatch login>
+	    AuthUserFile D:/Professionel/Data/UwAmp/www/Git-InMalaza/.htpsswd
+	    AuthName "InMalaza - Authentification Administrateur"
+	    AuthType Basic
+	    Require valid-user
+	</FilesMatch>
+   
+
+  ### Etape 7 : Lancer votre application (Aucune article n'est inséré dans la base de donné il faudra donc que vous en insérer via le BackOffice)
   
     lien backoffice : votre-url/BackOffice
+    identifiant backoffice : 
+    *htaccess : username=admin - password=test;
+    *normal : username=admin - pass=admin1234;
