@@ -3,7 +3,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php/$1 [L,QSA]
 <FilesMatch login>
-    AuthUserFile /home/itc/www/.htpsswd
+    AuthUserFile D:/Professionel/Data/UwAmp/www/Git-InMalaza/.htpsswd
     AuthName "InMalaza - Authentification Administrateur"
     AuthType Basic
     Require valid-user
