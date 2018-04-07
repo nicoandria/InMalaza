@@ -1,4 +1,4 @@
-# InMalaza
+# InMalaza - by ANDRIAMALALA Louison Mamy Nico S6 N°02B
 ## Mini-document d'installation
 ### Etape 1 : Extraire le contenu du dossier compréssé codeigniter-306.zip dans un repertoire de votre serveur web
 ### Etape 2 : Copier les autres fichiers et dossiers à part codeigniter-306.zip et assets.rar dans le répértoire oû vous aviez décompréssé CodeIgniter précédement et assurez-vous que tout les fichiers du même nom soit remplacer par le nouveau
@@ -46,5 +46,5 @@
   
     lien backoffice : votre-url/BackOffice
     identifiant backoffice : 
-    *htaccess : username=admin - password=test;
-    *normal : username=admin - pass=admin1234;
+    *htaccess : username=admin - password=test
+    *normal : username=admin - pass=admin1234
