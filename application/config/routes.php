@@ -53,5 +53,5 @@ $route['default_controller'] = 'Home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['categorie/(:any)-([0-9])'] = "Home/categorie/$2";
-$route['article/(:any)-([0-9])'] = "Home/detail/$2";
+$route['categorie/(:any)-([0-9]+)'] = "Home/categorie/$2";
+$route['article/(:any)-([0-9]+)'] = "Home/detail/$2";
